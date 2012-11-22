@@ -21,6 +21,7 @@
 		04F08BB9165DD8E600F76AA6 /* LSEmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F08BB8165DD8E600F76AA6 /* LSEmojiView.m */; };
 		04F08BBC165DDA1900F76AA6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F08BBB165DDA1900F76AA6 /* CoreText.framework */; };
 		04F08BD0165DFD1000F76AA6 /* NSCharacterSet+EmojiAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F08BCF165DFD1000F76AA6 /* NSCharacterSet+EmojiAdditions.m */; };
+		04F08BE2165DFEBA00F76AA6 /* NSString+EmojiAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F08BE1165DFEBA00F76AA6 /* NSString+EmojiAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		04F08BBB165DDA1900F76AA6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		04F08BCE165DFD1000F76AA6 /* NSCharacterSet+EmojiAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCharacterSet+EmojiAdditions.h"; sourceTree = "<group>"; };
 		04F08BCF165DFD1000F76AA6 /* NSCharacterSet+EmojiAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCharacterSet+EmojiAdditions.m"; sourceTree = "<group>"; };
+		04F08BE0165DFEBA00F76AA6 /* NSString+EmojiAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EmojiAdditions.h"; sourceTree = "<group>"; };
+		04F08BE1165DFEBA00F76AA6 /* NSString+EmojiAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EmojiAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 			children = (
 				04F08BCE165DFD1000F76AA6 /* NSCharacterSet+EmojiAdditions.h */,
 				04F08BCF165DFD1000F76AA6 /* NSCharacterSet+EmojiAdditions.m */,
+				04F08BE0165DFEBA00F76AA6 /* NSString+EmojiAdditions.h */,
+				04F08BE1165DFEBA00F76AA6 /* NSString+EmojiAdditions.m */,
 			);
 			name = Additions;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 				04F08BAD165DD80100F76AA6 /* LSViewController.m in Sources */,
 				04F08BB9165DD8E600F76AA6 /* LSEmojiView.m in Sources */,
 				04F08BD0165DFD1000F76AA6 /* NSCharacterSet+EmojiAdditions.m in Sources */,
+				04F08BE2165DFEBA00F76AA6 /* NSString+EmojiAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
