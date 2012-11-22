@@ -10,6 +10,8 @@
 #import <CoreText/CoreText.h>
 #import "NSString+EmojiAdditions.h"
 
+#define FONT_SIZE 24
+
 @implementation LSEmojiView
 
 - (id)initWithFrame:(CGRect)frame
@@ -28,7 +30,7 @@
 	CGContextRef context = UIGraphicsGetCurrentContext();
 	
 	NSString *string = @"😢演示这个问题出在哪里";
-	NSDictionary *attributes = @{(id)kCTFontAttributeName : [UIFont systemFontOfSize:24]};
+	NSDictionary *attributes = @{(id)kCTFontAttributeName : [UIFont systemFontOfSize:FONT_SIZE]};
 	NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:string attributes:attributes];
 	CTLineRef line = CTLineCreateWithAttributedString((__bridge CFAttributedStringRef)(attributedString));
 	CGContextSetTextMatrix(context, CGAffineTransformMakeScale(1.0, -1.0));
@@ -40,6 +42,12 @@
 	CTLineRef line2 = CTLineCreateWithAttributedString((__bridge CFAttributedStringRef)(attributedString2));
 	CGContextSetTextPosition(context, 10, 100);
 	CTLineDraw(line2, context);
+	
+	NSDictionary *attributes3 = @{(id)kCTFontAttributeName : [UIFont fontWithName:@"AppleColorEmoji" size:FONT_SIZE]};
+	NSAttributedString *attributedString3 = [[NSAttributedString alloc] initWithString:string attributes:attributes3];
+	CTLineRef line3 = CTLineCreateWithAttributedString((__bridge CFAttributedStringRef)(attributedString3));
+	CGContextSetTextPosition(context, 10, 150);
+	CTLineDraw(line3, context);
 }
 
 @end
