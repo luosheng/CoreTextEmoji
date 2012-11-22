@@ -20,6 +20,7 @@
 		04F08BAD165DD80100F76AA6 /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F08BAC165DD80100F76AA6 /* LSViewController.m */; };
 		04F08BB9165DD8E600F76AA6 /* LSEmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F08BB8165DD8E600F76AA6 /* LSEmojiView.m */; };
 		04F08BBC165DDA1900F76AA6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F08BBB165DDA1900F76AA6 /* CoreText.framework */; };
+		04F08BD0165DFD1000F76AA6 /* NSCharacterSet+EmojiAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F08BCF165DFD1000F76AA6 /* NSCharacterSet+EmojiAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		04F08BB7165DD8E600F76AA6 /* LSEmojiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSEmojiView.h; sourceTree = "<group>"; };
 		04F08BB8165DD8E600F76AA6 /* LSEmojiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSEmojiView.m; sourceTree = "<group>"; };
 		04F08BBB165DDA1900F76AA6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		04F08BCE165DFD1000F76AA6 /* NSCharacterSet+EmojiAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCharacterSet+EmojiAdditions.h"; sourceTree = "<group>"; };
+		04F08BCF165DFD1000F76AA6 /* NSCharacterSet+EmojiAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCharacterSet+EmojiAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,7 @@
 		04F08B96165DD80100F76AA6 /* CoreTextEmoji */ = {
 			isa = PBXGroup;
 			children = (
+				04F08BCD165DFCFF00F76AA6 /* Additions */,
 				04F08B9F165DD80100F76AA6 /* LSAppDelegate.h */,
 				04F08BA0165DD80100F76AA6 /* LSAppDelegate.m */,
 				04F08BA8165DD80100F76AA6 /* MainStoryboard.storyboard */,
@@ -114,6 +118,15 @@
 				04F08BA6165DD80100F76AA6 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04F08BCD165DFCFF00F76AA6 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				04F08BCE165DFD1000F76AA6 /* NSCharacterSet+EmojiAdditions.h */,
+				04F08BCF165DFD1000F76AA6 /* NSCharacterSet+EmojiAdditions.m */,
+			);
+			name = Additions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +200,7 @@
 				04F08BA1165DD80100F76AA6 /* LSAppDelegate.m in Sources */,
 				04F08BAD165DD80100F76AA6 /* LSViewController.m in Sources */,
 				04F08BB9165DD8E600F76AA6 /* LSEmojiView.m in Sources */,
+				04F08BD0165DFD1000F76AA6 /* NSCharacterSet+EmojiAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
