@@ -29,7 +29,7 @@
 {
 	CGContextRef context = UIGraphicsGetCurrentContext();
 	
-	NSString *string = @"😢演示这个问题出在哪里";
+	NSString *string = @"😢中文测试 English test";
 	NSDictionary *attributes = @{(id)kCTFontAttributeName : [UIFont systemFontOfSize:FONT_SIZE]};
 	NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:string attributes:attributes];
 	CTLineRef line = CTLineCreateWithAttributedString((__bridge CFAttributedStringRef)(attributedString));
