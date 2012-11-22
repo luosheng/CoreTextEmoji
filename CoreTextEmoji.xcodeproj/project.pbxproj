@@ -18,6 +18,7 @@
 		04F08BA7165DD80100F76AA6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F08BA6165DD80100F76AA6 /* Default-568h@2x.png */; };
 		04F08BAA165DD80100F76AA6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F08BA8165DD80100F76AA6 /* MainStoryboard.storyboard */; };
 		04F08BAD165DD80100F76AA6 /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F08BAC165DD80100F76AA6 /* LSViewController.m */; };
+		04F08BB9165DD8E600F76AA6 /* LSEmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F08BB8165DD8E600F76AA6 /* LSEmojiView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		04F08BA9165DD80100F76AA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		04F08BAB165DD80100F76AA6 /* LSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSViewController.h; sourceTree = "<group>"; };
 		04F08BAC165DD80100F76AA6 /* LSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSViewController.m; sourceTree = "<group>"; };
+		04F08BB7165DD8E600F76AA6 /* LSEmojiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSEmojiView.h; sourceTree = "<group>"; };
+		04F08BB8165DD8E600F76AA6 /* LSEmojiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSEmojiView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				04F08BA8165DD80100F76AA6 /* MainStoryboard.storyboard */,
 				04F08BAB165DD80100F76AA6 /* LSViewController.h */,
 				04F08BAC165DD80100F76AA6 /* LSViewController.m */,
+				04F08BB7165DD8E600F76AA6 /* LSEmojiView.h */,
+				04F08BB8165DD8E600F76AA6 /* LSEmojiView.m */,
 				04F08B97165DD80100F76AA6 /* Supporting Files */,
 			);
 			path = CoreTextEmoji;
@@ -177,6 +182,7 @@
 				04F08B9D165DD80100F76AA6 /* main.m in Sources */,
 				04F08BA1165DD80100F76AA6 /* LSAppDelegate.m in Sources */,
 				04F08BAD165DD80100F76AA6 /* LSViewController.m in Sources */,
+				04F08BB9165DD8E600F76AA6 /* LSEmojiView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +299,7 @@
 				04F08BB2165DD80100F76AA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
