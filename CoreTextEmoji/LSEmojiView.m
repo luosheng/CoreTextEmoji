@@ -50,14 +50,13 @@
 	CTLineRef line3 = CTLineCreateWithAttributedString((__bridge CFAttributedStringRef)(attributedString3));
 	CGContextSetTextPosition(context, 10, 150);
 	CTLineDraw(line3, context);
-	CFShow(line3);
 	CFRelease(line3);
 	
 	NSDictionary *fontAttributes = @{
 		(id)kCTFontFamilyNameAttribute : @"Helvetica",
 		(id)kCTFontCascadeListAttribute : @[
-			(__bridge id)CTFontDescriptorCreateWithNameAndSize(CFSTR("AppleColorEmoji"), 0),
-			(__bridge id)CTFontDescriptorCreateWithNameAndSize(CFSTR("STHeitiSC-Light"), 0)
+			(__bridge_transfer id)CTFontDescriptorCreateWithNameAndSize(CFSTR("AppleColorEmoji"), 0),
+			(__bridge_transfer id)CTFontDescriptorCreateWithNameAndSize(CFSTR("STHeitiSC-Light"), 0)
 		]
 	};
 	CTFontDescriptorRef descriptor = CTFontDescriptorCreateWithAttributes((__bridge CFDictionaryRef)(fontAttributes));
