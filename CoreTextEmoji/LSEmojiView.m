@@ -8,6 +8,7 @@
 
 #import "LSEmojiView.h"
 #import <CoreText/CoreText.h>
+#import "NSString+EmojiAdditions.h"
 
 @implementation LSEmojiView
 
@@ -33,6 +34,12 @@
 	CGContextSetTextMatrix(context, CGAffineTransformMakeScale(1.0, -1.0));
 	CGContextSetTextPosition(context, 10, 50);
 	CTLineDraw(line, context);
+	
+	NSString *string2 = [string stringByAddingZeroWidthSpacesAfterEmojiCharacters];
+	NSAttributedString *attributedString2 = [[NSAttributedString alloc] initWithString:string2 attributes:attributes];
+	CTLineRef line2 = CTLineCreateWithAttributedString((__bridge CFAttributedStringRef)(attributedString2));
+	CGContextSetTextPosition(context, 10, 100);
+	CTLineDraw(line2, context);
 }
 
 @end
