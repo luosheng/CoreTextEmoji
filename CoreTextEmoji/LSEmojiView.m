@@ -7,6 +7,7 @@
 //
 
 #import "LSEmojiView.h"
+#import <CoreText/CoreText.h>
 
 @implementation LSEmojiView
 
@@ -19,13 +20,19 @@
     return self;
 }
 
-/*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
-    // Drawing code
+	CGContextRef context = UIGraphicsGetCurrentContext();
+	
+	NSString *string = @"😢演示这个问题出在哪里";
+	NSDictionary *attributes = @{(id)kCTFontAttributeName : [UIFont systemFontOfSize:24]};
+	NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:string attributes:attributes];
+	CTLineRef line = CTLineCreateWithAttributedString((__bridge CFAttributedStringRef)(attributedString));
+	CGContextSetTextMatrix(context, CGAffineTransformMakeScale(1.0, -1.0));
+	CGContextSetTextPosition(context, 10, 50);
+	CTLineDraw(line, context);
 }
-*/
 
 @end

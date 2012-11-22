@@ -19,6 +19,7 @@
 		04F08BAA165DD80100F76AA6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F08BA8165DD80100F76AA6 /* MainStoryboard.storyboard */; };
 		04F08BAD165DD80100F76AA6 /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F08BAC165DD80100F76AA6 /* LSViewController.m */; };
 		04F08BB9165DD8E600F76AA6 /* LSEmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F08BB8165DD8E600F76AA6 /* LSEmojiView.m */; };
+		04F08BBC165DDA1900F76AA6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F08BBB165DDA1900F76AA6 /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		04F08BAC165DD80100F76AA6 /* LSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSViewController.m; sourceTree = "<group>"; };
 		04F08BB7165DD8E600F76AA6 /* LSEmojiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSEmojiView.h; sourceTree = "<group>"; };
 		04F08BB8165DD8E600F76AA6 /* LSEmojiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSEmojiView.m; sourceTree = "<group>"; };
+		04F08BBB165DDA1900F76AA6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F08BBC165DDA1900F76AA6 /* CoreText.framework in Frameworks */,
 				04F08B91165DD80100F76AA6 /* UIKit.framework in Frameworks */,
 				04F08B93165DD80100F76AA6 /* Foundation.framework in Frameworks */,
 				04F08B95165DD80100F76AA6 /* CoreGraphics.framework in Frameworks */,
@@ -76,6 +79,7 @@
 		04F08B8F165DD80100F76AA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04F08BBB165DDA1900F76AA6 /* CoreText.framework */,
 				04F08B90165DD80100F76AA6 /* UIKit.framework */,
 				04F08B92165DD80100F76AA6 /* Foundation.framework */,
 				04F08B94165DD80100F76AA6 /* CoreGraphics.framework */,
