@@ -56,6 +56,7 @@
 		(id)kCTFontFamilyNameAttribute : @"Helvetica",
 		(id)kCTFontCascadeListAttribute : @[
 			(__bridge_transfer id)CTFontDescriptorCreateWithNameAndSize(CFSTR("AppleColorEmoji"), 0),
+			(__bridge_transfer id)CTFontDescriptorCreateWithNameAndSize(CFSTR("ZapfDingbatsITC"), 0),
 	
 	// The following line is optional. Core Text should look up in the predefined
 	// font cascading list for CJK characters.
